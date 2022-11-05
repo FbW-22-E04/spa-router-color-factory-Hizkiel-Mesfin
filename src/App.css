@@ -1,0 +1,182 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Login component */
+
+.form-container {
+  background-color: aqua;
+  height: 100vh;
+}
+
+.form {
+  background-color: teal;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
+.form > h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form > input {
+  padding: 0.5rem 2rem;
+}
+
+.form > button {
+  padding: 0.5rem 2rem;
+}
+
+/* Header */
+.nav {
+  height: 15rem;
+  background-color: aqua;
+  padding-top: 2rem;
+  position: relative;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.add-color-btn {
+  font-size: 1.4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+
+.add-color-btn:hover {
+  transform: translate(-50%, -2px);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.add-color-btn:active {
+  transform: translate(-50%, 0px);
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.sec-heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.list {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list > li {
+  background-color: blue;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add color component */
+
+.section-add-color {
+  background-color: aqua;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.color-name-input {
+  padding: 0.5rem 1rem;
+}
+
+.color-value-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.color-value-label {
+  display: block;
+  text-align: center;
+}
+
+.add-color {
+  font-size: 1.6rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.add-color-container {
+  background-image: linear-gradient(
+    red 0%,
+    orange 25%,
+    yellow 50%,
+    green 75%,
+    blue 100%
+  );
+
+  height: 100vh;
+}
+
+/* Color component */
+
+.color-name {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.color-name > h1 {
+  margin-bottom: 5rem;
+}
+
+.go-back-btn {
+  font-size: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
